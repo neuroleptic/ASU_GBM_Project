@@ -1,0 +1,70 @@
+
+    <!DOCTYPE html>
+    <html>
+    <head>
+        <title>Patient-Level Average Shannon Diversity Index</title>
+        <style>
+            body {
+                font-family: Arial, sans-serif;
+                margin: 20px;
+                color: #333;
+            }
+            h1 {
+                color: #2c3e50;
+                text-align: center;
+                padding-bottom: 10px;
+                border-bottom: 2px solid #eee;
+            }
+            table {
+                border-collapse: collapse;
+                width: 100%;
+                margin: 20px 0;
+                box-shadow: 0 1px 3px rgba(0,0,0,0.2);
+            }
+            th, td {
+                text-align: center;
+                padding: 12px 15px;
+                border: 1px solid #ddd;
+            }
+            th {
+                background-color: #e74c3c;
+                color: white;
+                font-weight: 600;
+                text-transform: uppercase;
+                font-size: 0.85em;
+                letter-spacing: 0.05em;
+            }
+            tr:nth-child(even) {
+                background-color: #f8f9fa;
+            }
+            tr:hover {
+                background-color: #f1f1f1;
+            }
+            .patient-id {
+                font-weight: bold;
+                text-align: left;
+            }
+            .shannon-val {
+                font-family: monospace;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>Patient-Level Average Shannon Diversity Index</h1>
+        <table>
+            <thead>
+                <tr>
+                    <th>Patient ID</th>
+                    <th>PyClone-LICHeE</th>
+                    <th>PyClone-ClonEvol</th>
+                    <th>CloneFinder</th>
+                    <th>LICHeE</th>
+                </tr>
+            </thead>
+            <tbody>
+    <tr><td class='patient-id'>G12</td><td class='shannon-val'>1.1832</td><td class='shannon-val'>1.7391</td><td class='shannon-val'>0.5333</td><td class='shannon-val'>0.9579</td></tr><tr><td class='patient-id'>G23</td><td class='shannon-val'>0.9932</td><td class='shannon-val'>1.3443</td><td class='shannon-val'>0.6673</td><td class='shannon-val'>0.6732</td></tr><tr><td class='patient-id'>G39</td><td class='shannon-val'>0.8502</td><td class='shannon-val'>0.0000</td><td class='shannon-val'>0.2274</td><td class='shannon-val'>0.7819</td></tr><tr><td class='patient-id'>G40</td><td class='shannon-val'>0.7881</td><td class='shannon-val'>1.0670</td><td class='shannon-val'>0.3356</td><td class='shannon-val'>0.8750</td></tr><tr><td class='patient-id'>G43</td><td class='shannon-val'>0.2616</td><td class='shannon-val'>0.9499</td><td class='shannon-val'>0.2728</td><td class='shannon-val'>0.2644</td></tr><tr><td class='patient-id'>G45</td><td class='shannon-val'>0.5671</td><td class='shannon-val'>1.5122</td><td class='shannon-val'>0.6971</td><td class='shannon-val'>0.5606</td></tr><tr><td class='patient-id'>G5</td><td class='shannon-val'>0.7030</td><td class='shannon-val'>1.3624</td><td class='shannon-val'>0.6431</td><td class='shannon-val'>0.7017</td></tr><tr><td class='patient-id'>G52</td><td class='shannon-val'>0.6957</td><td class='shannon-val'>0.8829</td><td class='shannon-val'>0.2684</td><td class='shannon-val'>0.6801</td></tr><tr><td class='patient-id'>G53</td><td class='shannon-val'>0.2595</td><td class='shannon-val'>1.0198</td><td class='shannon-val'>0.6010</td><td class='shannon-val'>0.8805</td></tr><tr><td class='patient-id'>G59</td><td class='shannon-val'>0.2712</td><td class='shannon-val'>1.0737</td><td class='shannon-val'>0.0000</td><td class='shannon-val'>0.0000</td></tr><tr><td class='patient-id'>G77</td><td class='shannon-val'>0.0729</td><td class='shannon-val'>1.5555</td><td class='shannon-val'>0.6100</td><td class='shannon-val'>0.7896</td></tr><tr><td class='patient-id'>G85</td><td class='shannon-val'>0.0000</td><td class='shannon-val'>1.5518</td><td class='shannon-val'>0.1468</td><td class='shannon-val'>0.7974</td></tr><tr><td class='patient-id'>G87</td><td class='shannon-val'>0.8963</td><td class='shannon-val'>1.6113</td><td class='shannon-val'>0.6000</td><td class='shannon-val'>1.1253</td></tr><tr><td class='patient-id'>G92</td><td class='shannon-val'>0.0358</td><td class='shannon-val'>0.0000</td><td class='shannon-val'>0.0000</td><td class='shannon-val'>0.9517</td></tr><tr><td class='patient-id'>G97</td><td class='shannon-val'>1.0106</td><td class='shannon-val'>1.0628</td><td class='shannon-val'>0.0000</td><td class='shannon-val'>0.9848</td></tr><tr><td class='patient-id'>G99</td><td class='shannon-val'>0.4333</td><td class='shannon-val'>2.1255</td><td class='shannon-val'>0.9629</td><td class='shannon-val'>0.1714</td></tr><tr><td class='patient-id'>M24</td><td class='shannon-val'>1.2535</td><td class='shannon-val'>1.5453</td><td class='shannon-val'>0.6634</td><td class='shannon-val'>1.2747</td></tr><tr><td class='patient-id'>M36</td><td class='shannon-val'>0.0362</td><td class='shannon-val'>0.0000</td><td class='shannon-val'>0.0000</td><td class='shannon-val'>0.0000</td></tr><tr><td class='patient-id'>M78</td><td class='shannon-val'>0.3107</td><td class='shannon-val'>0.0000</td><td class='shannon-val'>0.2728</td><td class='shannon-val'>0.5755</td></tr><tr><td class='patient-id'>M95</td><td class='shannon-val'>0.0000</td><td class='shannon-val'>0.0000</td><td class='shannon-val'>0.4046</td><td class='shannon-val'>0.7720</td></tr><tr><td class='patient-id'>P158</td><td class='shannon-val'>0.8198</td><td class='shannon-val'>1.5456</td><td class='shannon-val'>0.6838</td><td class='shannon-val'>0.8720</td></tr><tr><td class='patient-id'>P163</td><td class='shannon-val'>0.9506</td><td class='shannon-val'>1.5644</td><td class='shannon-val'>0.8496</td><td class='shannon-val'>0.9703</td></tr><tr><td class='patient-id'>P190</td><td class='shannon-val'>0.9893</td><td class='shannon-val'>1.2685</td><td class='shannon-val'>0.5347</td><td class='shannon-val'>0.6591</td></tr><tr><td class='patient-id'>p065</td><td class='shannon-val'>0.0356</td><td class='shannon-val'>0.0000</td><td class='shannon-val'>0.0000</td><td class='shannon-val'>0.9160</td></tr><tr><td class='patient-id'>p129</td><td class='shannon-val'>0.5624</td><td class='shannon-val'>0.6811</td><td class='shannon-val'>0.2707</td><td class='shannon-val'>0.5997</td></tr><tr><td class='patient-id'>p152</td><td class='shannon-val'>1.1369</td><td class='shannon-val'>1.0826</td><td class='shannon-val'>0.2670</td><td class='shannon-val'>1.1331</td></tr><tr><td class='patient-id'>p191</td><td class='shannon-val'>0.6313</td><td class='shannon-val'>1.5403</td><td class='shannon-val'>0.8614</td><td class='shannon-val'>0.7391</td></tr>
+            </tbody>
+        </table>
+    </body>
+    </html>
+    

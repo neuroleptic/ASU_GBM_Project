@@ -1,0 +1,19 @@
+<package name="beast-3d-directional" version="1.0.0">
+    <depends on="BEAST.base" atleast="2.7.0"/>
+
+    <service type="beast.base.core.BEASTInterface">
+        <provider classname="beast3d.directional.likelihood.DirectionalDiffusionLikelihood"/>
+        <provider classname="beast3d.directional.model.DirectionalDiffusionModel"/>
+        <provider classname="beast3d.directional.operators.DirectionalDriftOperator"/>
+        <provider classname="beast3d.directional.operators.AdaptiveDirectionalOperator"/>
+    </service>
+
+    <service type="beast.base.inference.Distribution">
+        <provider classname="beast3d.directional.likelihood.DirectionalDiffusionLikelihood"/>
+    </service>
+
+    <service type="beast.base.inference.Operator">
+        <provider classname="beast3d.directional.operators.DirectionalDriftOperator"/>
+        <provider classname="beast3d.directional.operators.AdaptiveDirectionalOperator"/>
+    </service>
+</package>

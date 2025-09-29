@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project default="compile" basedir=".">
+
+    <description>
+        Build file for BEAST-3D Directional package
+    </description>
+
+    <property name="src" location="src"/>
+    <property name="build" location="build"/>
+    <property name="lib" location="lib"/>
+
+    <!-- Use Java 17 and local BEAST2 installation -->
+    <property name="java.home" location="/Users/nick/Downloads/zulu17.60.17-ca-fx-jdk17.0.16-macosx_aarch64"/>
+    <property name="beast.dir" location="/Applications/BEAST 2.7.7"/>
+    <property name="beast.lib" location="${beast.dir}/lib"/>
+    <property name="beast.packages" location="${beast.lib}/packages"/>
+
+    <!-- Classpath -->
+    <path id="classpath">
+        <fileset dir="${beast.packages}">
+            <include name="BEAST.base.jar"/>
+            <include name="BEAST.app.jar"/>
+        </fileset>
+        <fileset dir="${beast.lib}">
+            <include name="*.jar"/>
+        </fileset>
+    </path>
+
+    <!-- Initialize -->
+    <target name="init">
+        <mkdir dir="${build}"/>
+        <mkdir dir="${lib}"/>
+    </target>
+
+    <!-- Clean -->
+    <target name="clean">
+        <delete dir="${build}"/>
+    </target>
+
+    <!-- Compile -->
+    <target name="compile" depends="init">
+        <javac srcdir="${src}"
+               destdir="${build}"
+               includeantruntime="false"
+               source="17"
+               target="17"
+               debug="true"
+               fork="true"
+               executable="${java.home}/bin/javac">
+            <classpath refid="classpath"/>
+        </javac>
+
+        <!-- Copy META-INF services -->
+        <copy todir="${build}">
+            <fileset dir="${src}" includes="META-INF/**/*"/>
+        </copy>
+
+        <echo message="Compilation successful!"/>
+
+        <!-- List compiled classes -->
+        <echo message="Compiled classes:"/>
+        <exec executable="find">
+            <arg value="${build}"/>
+            <arg value="-name"/>
+            <arg value="*.class"/>
+            <arg value="-exec"/>
+            <arg value="echo"/>
+            <arg value="✓ {}"/>
+            <arg value=";"/>
+        </exec>
+
+        <!-- List services files -->
+        <echo message="Services files:"/>
+        <exec executable="find">
+            <arg value="${build}"/>
+            <arg value="-name"/>
+            <arg value="META-INF"/>
+            <arg value="-exec"/>
+            <arg value="find"/>
+            <arg value="{}"/>
+            <arg value="-type"/>
+            <arg value="f"/>
+            <arg value=";"/>
+        </exec>
+    </target>
+
+    <!-- Create JAR package -->
+    <target name="jar" depends="compile">
+        <mkdir dir="dist"/>
+        <jar jarfile="dist/beast-3d-directional.v1.0.0.jar" basedir="${build}">
+            <manifest>
+                <attribute name="Built-By" value="${user.name}"/>
+                <attribute name="Implementation-Version" value="1.0.0"/>
+                <attribute name="Implementation-Title" value="BEAST-3D-Directional"/>
+                <attribute name="Package-Name" value="beast-3d-directional"/>
+            </manifest>
+        </jar>
+        <echo message="JAR created: dist/beast-3d-directional.v1.0.0.jar"/>
+    </target>
+
+    <!-- Create full package for installation -->
+    <target name="package" depends="jar">
+        <mkdir dir="dist/beast-3d-directional"/>
+        <mkdir dir="dist/beast-3d-directional/lib"/>
+        <mkdir dir="dist/beast-3d-directional/examples"/>
+
+        <!-- Copy JAR -->
+        <copy file="dist/beast-3d-directional.v1.0.0.jar" todir="dist/beast-3d-directional/lib"/>
+
+        <!-- Copy metadata -->
+        <copy file="version.xml" todir="dist/beast-3d-directional" failonerror="false"/>
+        <copy file="README.md" tofile="dist/beast-3d-directional/README" failonerror="false"/>
+
+        <!-- Copy examples -->
+        <copy todir="dist/beast-3d-directional/examples" failonerror="false">
+            <fileset dir="examples" includes="*.xml"/>
+        </copy>
+
+        <echo message="Package created in: dist/beast-3d-directional/"/>
+    </target>
+
+    <!-- Install to BEAST2 -->
+    <target name="install" depends="package">
+        <property name="beast.user.dir" location="${user.home}/Library/Application Support/BEAST/2.7"/>
+        <mkdir dir="${beast.user.dir}/beast-3d-directional"/>
+
+        <copy todir="${beast.user.dir}/beast-3d-directional">
+            <fileset dir="dist/beast-3d-directional"/>
+        </copy>
+
+        <echo message="BEAST-3D-Directional installed to: ${beast.user.dir}/beast-3d-directional"/>
+        <echo message="Restart BEAST2/BEAUti to use the package"/>
+    </target>
+
+</project>

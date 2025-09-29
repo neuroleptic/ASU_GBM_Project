@@ -1,0 +1,35 @@
+<itsabeastystatewerein version='2.0' sample='10000000'>
+<statenode id='Tree.t:G52'>((((0:0.08949457117845222,4:0.08949457117845222)8:0.015067228540893068,(2:0.06757964007646508,5:0.06757964007646508)9:0.03698215964288021)6:0.1446908969322155,1:0.2492526966515608)7:4.042756207956465,3:4.292008904608026)10:0.0</statenode>
+<statenode id='ucldDiffusion.stdev'>ucldDiffusion.stdev[1 1] (0.0,5.0): 4.761731731907346 </statenode>
+<statenode id='rateCategories'>rateCategories[10 1] (0,9): 1 2 3 2 3 1 1 6 7 9 </statenode>
+<statenode id='trait.3d'>trait.3d[18 1] (-1000.0,1000.0): 228.27387976668558 247.54659040236254 -379.6118884316702 -404.3447612738371 843.1578414928639 -248.93401007050772 -705.5304059057629 20.190331973161847 263.05153271973734 -172.97280021539382 524.4592073336581 789.3479023728851 560.1625312717264 -737.5091413108574 -961.7655078622316 -40.107591688613866 -858.1655539446714 -203.44578371963507 </statenode>
+<statenode id='precision.3d'>precision.3d[3 1] (0.01,100.0): 8.567710028643337 6.425784929474517 39.78444365917067 </statenode>
+<statenode id='dimension.multipliers'>dimension.multipliers[3 1] (0.1,10.0): 5.4127662420169385 4.199534191391014 2.7928374076504583 </statenode>
+<statenode id='clockRate'>clockRate[1 1] (0.0,Infinity): 0.28386872948348674 </statenode>
+<statenode id='popSize'>popSize[1 1] (0.0,Infinity): 1.1278174323144818 </statenode>
+<statenode id='lambda'>lambda[1 1] (0.0,Infinity): 2.0019368176237835 </statenode>
+<statenode id='alpha'>alpha[1 1] (0.0,1.0): 0.006577294256878994 </statenode>
+<statenode id='beta'>beta[1 1] (0.0,1.0): 0.15195490212022547 </statenode>
+</itsabeastystatewerein>
+<!--
+{"operators":[
+{"id":"treeScaler.t:G52","p":0.5256362790002117,"accept":51556,"reject":175336,"acceptFC":51455,"rejectFC":174992,"rejectIv":0,"rejectOp":0},
+{"id":"treeRootScaler.t:G52","p":0.2945559842713346,"accept":57998,"reject":169245,"acceptFC":57811,"rejectFC":169007,"rejectIv":0,"rejectOp":0},
+{"id":"SubtreeSlide.t:G52","p":3.3668604658432413,"accept":85137,"reject":1050093,"acceptFC":84855,"rejectFC":1048297,"rejectIv":486813,"rejectOp":486813},
+{"id":"narrow.t:G52","p":"NaN","accept":132930,"reject":1005250,"acceptFC":132680,"rejectFC":1003388,"rejectIv":0,"rejectOp":0},
+{"id":"wide.t:G52","p":"NaN","accept":4634,"reject":222864,"acceptFC":4621,"rejectFC":222437,"rejectIv":126270,"rejectOp":126270},
+{"id":"WilsonBalding.t:G52","p":"NaN","accept":4069,"reject":223305,"acceptFC":4061,"rejectFC":222902,"rejectIv":116182,"rejectOp":116182},
+{"id":"strictClockUpDownOperator","p":0.24344263671877428,"accept":61534,"reject":165592,"acceptFC":61207,"rejectFC":165512,"rejectIv":97791,"rejectOp":0},
+{"id":"StrictClockRateScaler","p":0.5384018126958475,"accept":52339,"reject":174963,"acceptFC":52121,"rejectFC":174760,"rejectIv":41043,"rejectOp":0},
+{"id":"PopSizeScaler","p":0.2227351314152023,"accept":62984,"reject":163774,"acceptFC":62614,"rejectFC":163678,"rejectIv":0,"rejectOp":0},
+{"id":"LambdaScaler","p":0.7114935679267901,"accept":51370,"reject":175612,"acceptFC":51231,"rejectFC":175334,"rejectIv":0,"rejectOp":0},
+{"id":"ucldStdevScaler","p":0.3448589804158776,"accept":6031,"reject":221295,"acceptFC":5822,"rejectFC":221120,"rejectIv":163768,"rejectOp":163768},
+{"id":"CategoriesSwapOperator","p":"NaN","accept":1430612,"reject":841548,"acceptFC":1426601,"rejectFC":841293,"rejectIv":0,"rejectOp":0},
+{"id":"CategoriesRandomWalk","p":"NaN","accept":398870,"reject":359725,"acceptFC":398019,"rejectFC":359131,"rejectIv":315969,"rejectOp":315969},
+{"id":"Trait3DRandomWalk","p":10077.442393724408,"accept":192962,"reject":1321619,"acceptFC":190142,"rejectFC":1321619,"rejectIv":1311694,"rejectOp":1311694},
+{"id":"Precision3DScaler","p":0.061338563453625386,"accept":104375,"reject":653090,"acceptFC":102994,"rejectFC":653040,"rejectIv":504546,"rejectOp":504546},
+{"id":"DimensionMultipliersScaler","p":0.06671037311351619,"accept":32283,"reject":195538,"acceptFC":31871,"rejectFC":195498,"rejectIv":145811,"rejectOp":145811},
+{"id":"ScaleAlpha","p":0.2680933785610383,"accept":24501,"reject":51410,"acceptFC":24406,"rejectFC":51376,"rejectIv":0,"rejectOp":0},
+{"id":"ScaleBeta","p":0.5461685820485922,"accept":20772,"reject":54785,"acceptFC":20707,"rejectFC":54724,"rejectIv":0,"rejectOp":0}
+]}
+-->

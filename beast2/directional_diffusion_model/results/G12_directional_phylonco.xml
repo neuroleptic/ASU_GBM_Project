@@ -1,0 +1,236 @@
+<?xml version="1.0" ?>
+<beast version="2.7" namespace="beast.base.core:beast.base.inference:beast.base.evolution.alignment:beast.base.evolution.tree.coalescent:beast.base.util:beast.base.math:beast.base.evolution.operator:beast.base.inference.operator:beast.base.evolution.sitemodel:beast.base.evolution.substitutionmodel:beast.base.evolution.likelihood:beast.base.evolution.branchratemodel:beastclassic.continuous:beastclassic.evolution.tree:beastclassic.math.distributions:beastclassic.evolution.operators:phylonco.beast.evolution.errormodel:phylonco.beast.evolution.substitutionmodel:phylonco.beast.evolution.likelihood:beast.base.evolution.datatype:beast3d.directional.likelihood:beast3d.directional.model:beast3d.directional.operators">
+    <alignment id="G12_mutations" spec="Alignment" dataType="binary">
+        <sequence id="seq_Clone1" spec="Sequence" taxon="Clone1" value="0100111110011101101010011011010111010011000011101111010001111111000110111001111111101011010010101011101101100101001110000110110110111001000110111011000101010111011010000111101011010000100101111111111110111101010101110111111010011111011110001011111010101101101110101011100011101100111111100011111000110111111011111100011011010000001110110111110101101000111111001111101011010000111111101111111010011010000001111111001010111111101101110111010011111100101101000000111110010100100100111101001001111001110111110100110000000111111110110000100101100101110100001001001111101011100000111011101110000001011110010111110011111111101011111101110111010111010111011100111110001110001111001010011001000011001010111000000010000000101101011100100111000011000110001100010010001010111000000111110011000111100001010010010111110111001111111110100110001101011111110011011111110111111001011101011110110101110111100011101011111110010111111100001100111011101001110100001100001011010110111110111100110100111111110111011001111110"/>
+        <sequence id="seq_Clone2" spec="Sequence" taxon="Clone2" value="0100111110011101101010011011010111010011000011101111011001111111000110111101111111101011010011101011101101100101001110000110110110111001000110111011000101010111011010000111101011010000100101111111111110011101010101110111110010011111011110001011111010101101101110101011100011100100111111100011111000110111111011111100011011010000001110110111110101101000111111001111101011010000111111101111111010011010000001111111001010111111101101110111010011111100101101100000111110011100100100111110001001111001110111110100110000000111111110110000100101100101110100001001001111101011100000111011101110000001011110010111110011111111101011111101110111010111010111011101110110000010001111001010011001000011001010111000000010000000101101011100100111000011000110001100010010001010111000000111110011000111100001010010010111110111001111111110100110001101011111110011011111110111111001011101011110110101110111100011101011111110010111111100001100111011101001111100001101101011010110111110111110110100111111110111011101111110"/>
+        <sequence id="seq_Clone3" spec="Sequence" taxon="Clone3" value="0100111111011101101010011011010111010011000011101110010001111111000110111001111111101011010010101011101101100101001110000110110110111001000110111011000101010111111010000111101011011000100101111111111110111101011101010111111010011111011110001011111010101101101110101011100011101100111111100011111000110111110011111100011011010000001110110111110101101000111111001111101011010000111111101111111010011010100001111111001010111111101101110111010011111100101101000000111110010100100100111111001001111001110111110100110000001111111110110100100101100101110100011001001111101011100000111011101110000001011110010111110011111111101011111101110111010111010111011100111110001110001111001010011001010011001010111000000011000000101101011100100111000011000110001100010010001010111001000111110011100111100001010010010111110111001111111110100110001101011111110011011110110111111001011101011110110101110111100011101011111110010111111100001100111011101101111100001100001011010110111110111100110100111111110111011001111110"/>
+        <sequence id="seq_Clone4" spec="Sequence" taxon="Clone4" value="0100111110011101101010011011010111010011000011101111010001111111000110111001111111101011010010101011101101100101001110000110110110111001000110111011000101010111011010000111101011010000100101111111111110111101010101110111111010011111011110001011111010101101101110101011100011101100111111100011111000110111111011111100011011010000001110110111110101101000111111001111101011010000111111101111111010011010000001111111001010111111101101110111010011111100101101000000111110010100100100111101001001111001110111110100110000000111111110110000100101100101110100001001001111101011100000111011101110000001011110010111110011111111101011111101110111010111010111011100111110001110001111001010011001000011001010111000000010000000101101011100100111000011000110001100010010001010111000000111110011000111100001010010010111110111001111111110100110001101011111110011011111110111111001011101011110110101110111100011101011111110010111111100001100111011101001110100001100001011010110111110111100110100111111110111011001111110"/>
+        <sequence id="seq_Clone5" spec="Sequence" taxon="Clone5" value="0100111110011101101110011011010111010011111111101111010001111111000110111001111111101011010010101011101101110101001110000110110110111001000110111011000101110111011010000111101011010000100101111111111110111101010101110111111010011111011110001011111010101101101110101011100011101100111111110011111000110111111011111100011011010000001110110111110101101000111111001111101011010000111111101111111010011010000101111111001010111111101101110111010011111100101101000000111110010101111100111101001001111001110111111100110000000111111110110000100101100101110100001001001111101011100000111011101110000001011110010111110011111111101011111101110111010111010111111100111110001110001111001010011001000011001010111000000010000000101101011100100111000011000110001100010010001010111000000111110011000111100101010010010111110111001111111110100110001101011111110011011111110111111001011101011110110101110111100011101011111110010111111100001100111011101001110100001100001011010110111110111100110100111111110111011001111110"/>
+        <sequence id="seq_Clone6" spec="Sequence" taxon="Clone6" value="1111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111"/>
+    </alignment>
+    
+    <dataType id="binaryDataType" spec="beast.base.evolution.datatype.Binary"/>
+    
+    <!-- 3D coordinates -->
+    <parameter id="trait.3d" spec="beast.base.inference.parameter.RealParameter"
+               dimension="18" name="stateNode" lower="-100.0" upper="100.0">
+        107.0 171.0 15.0 107.0 171.0 15.0 104.0 169.0 16.0 120.0 170.0 17.0 120.0 170.0 17.0 95.0 171.0 13.0
+    </parameter>
+    
+    <!-- Precision matrix (diagonal) -->
+    <parameter id="precision.3d" spec="beast.base.inference.parameter.RealParameter"
+               dimension="3" name="stateNode" lower="0.01" upper="100.0">
+        1.0 1.0 1.0
+    </parameter>
+    
+    <!-- DIRECTIONAL DRIFT PARAMETERS -->
+    <parameter id="drift.rate" spec="beast.base.inference.parameter.RealParameter"
+               dimension="3" name="stateNode" lower="-10.0" upper="10.0">
+        0.001 0.001 0.001
+    </parameter>
+    
+    <!-- Diffusion rate -->
+    <parameter id="diffusion.rate" spec="beast.base.inference.parameter.RealParameter"
+               name="stateNode" lower="0.1" upper="10.0">
+        0.5
+    </parameter>
+    
+    <!-- Location parameter for compatibility -->
+    <parameter id="location" spec="beast.base.inference.parameter.RealParameter"
+               dimension="18" estimate="false">
+        107 171 15 107 171 15 104 169 16 120 170 17 120 170 17 95 171 13
+    </parameter>
+    
+    <traitmap id="traitmap" spec="beastclassic.evolution.tree.TreeTraitMap" tree="@Tree.t:G12" parameter="@location" traitName="location" randomizeupper="50 50 50" randomizelower="-50 -50 -50">
+		Clone1=107.00 171.00 15.00,		Clone2=107.00 171.00 15.00,		Clone3=104.00 169.00 16.00,		Clone4=120.00 170.00 17.00,		Clone5=120.00 170.00 17.00,		Clone6=95.00 171.00 13.00
+    </traitmap>
+    
+    <distribution id="rootPrior" spec='beastclassic.math.distributions.MultivariateNormalDistribution'>
+        <arg id='rootTrait' spec='beastclassic.evolution.tree.RootTrait' traitmap='@traitmap'/>
+        <mean spec='beast.base.inference.parameter.RealParameter' value='0.0 0.0 0.0'/>
+        <precision spec='beast.base.inference.parameter.RealParameter' minordimension='3'>
+            0.001 0.0 0.0
+            0.0 0.001 0.0
+            0.0 0.0 0.001
+        </precision>
+    </distribution>
+    
+    <!-- Mutation rate -->
+    <parameter id="lambda" spec="beast.base.inference.parameter.RealParameter" lower="0.0" value="2.0"/>
+    
+    <!-- PhyloNCO error model parameters -->
+    <parameter id="alpha" spec="beast.base.inference.parameter.RealParameter" lower="0.0" upper="1.0" value="0.01"/>
+    <parameter id="beta" spec="beast.base.inference.parameter.RealParameter" lower="0.0" upper="1.0" value="0.05"/>
+    
+    <!-- Clock parameters -->
+    <parameter id="clockRate" spec="beast.base.inference.parameter.RealParameter" lower="0.0" value="1.0"/>
+    <parameter id="popSize" spec="beast.base.inference.parameter.RealParameter" lower="0.0" value="0.5"/>
+    
+    <map name="Beta">beast.base.inference.distribution.Beta</map>
+    <map name="Exponential">beast.base.inference.distribution.Exponential</map>
+    <map name="InverseGamma">beast.base.inference.distribution.InverseGamma</map>
+    <map name="LogNormal">beast.base.inference.distribution.LogNormalDistributionModel</map>
+    <map name="Prior">beast.base.inference.distribution.Prior</map>
+    <map name="Gamma">beast.base.inference.distribution.Gamma</map>
+    <map name="Uniform">beast.base.inference.distribution.Uniform</map>
+    <map name="LaplaceDistribution">beast.base.inference.distribution.LaplaceDistribution</map>
+    <map name="OneOnX">beast.base.inference.distribution.OneOnX</map>
+    <map name="Normal">beast.base.inference.distribution.Normal</map>
+    
+    <run id="mcmc" spec="MCMC" chainLength="10000000">
+        <state id="state" spec="State" storeEvery="1000">
+            <tree id="Tree.t:G12" name="stateNode">
+                <trait id="dateTrait.t:G12" spec="beast.base.evolution.tree.TraitSet" traitname="date">
+                        Clone1=2003.4,
+                        Clone2=2003.4,
+                        Clone3=2003.4,
+                        Clone4=2003.4,
+                        Clone5=2003.4,
+                        Clone6=2003.4
+                    <taxa id="TaxonSet.G12" spec="TaxonSet">
+                        <data idref="G12_mutations" name="alignment"/>
+                    </taxa>
+                </trait>
+                <taxonset idref="TaxonSet.G12"/>
+            </tree>
+            
+            <stateNode idref='trait.3d'/>
+            <stateNode idref='precision.3d'/>
+            <stateNode idref='drift.rate'/>
+            <stateNode idref='diffusion.rate'/>
+            <stateNode idref='clockRate'/>
+            <stateNode idref='popSize'/>
+            <stateNode idref='lambda'/>
+            <stateNode idref='alpha'/>
+            <stateNode idref='beta'/>
+        </state>
+        
+        <distribution id="posterior" spec="beast.base.inference.CompoundDistribution">
+            <distribution id="prior" spec="beast.base.inference.CompoundDistribution">
+                <distribution id="CoalescentConstant.t:G12" spec="Coalescent">
+                    <populationModel id="ConstantPopulation.t:G12" popSize="@popSize" spec="ConstantPopulation"/>
+                    <treeIntervals id="TreeIntervals.t:G12" spec="beast.base.evolution.tree.TreeIntervals" tree="@Tree.t:G12"/>
+                </distribution>
+                <Prior id="ClockPrior" name="distribution" x="@clockRate">
+                    <Uniform id="Uniform.0" name="distr"/>
+                </Prior>
+                <Prior id="PopSizePrior" name="distribution" x="@popSize">
+                    <OneOnX id="OneOnX.0" name="distr"/>
+                </Prior>
+                <Prior id="LambdaPrior" name="distribution" x="@lambda">
+                    <Exponential id="Exponential.1" name="distr" mean="2.0"/>
+                </Prior>
+                
+                <distribution idref='rootPrior'/>
+                
+                <!-- Directional drift priors -->
+                <Prior id="DriftRatePrior" name="distribution" x="@drift.rate">
+                    <Normal id="NormalDist.0" name="distr" mean="0.0" sigma="5.0"/>
+                </Prior>
+                <Prior id="DiffusionRatePrior" name="distribution" x="@diffusion.rate">
+                    <LogNormal id="LogNormalDist.0" name="distr" M="0.0" S="1.0"/>
+                </Prior>
+                <!-- PhyloNCO priors -->
+                <Prior id="AlphaPrior" name="distribution" x="@alpha">
+                    <Beta id="BetaDist.0" name="distr" alpha="1.0" beta="10.0"/>
+                </Prior>
+                <Prior id="BetaPrior" name="distribution" x="@beta">
+                    <Beta id="BetaDist.1" name="distr" alpha="1.0" beta="10.0"/>
+                </Prior>
+            </distribution>
+            <distribution id="likelihood" spec="beast.base.inference.CompoundDistribution">
+                <!-- PhyloNCO likelihood with error model -->
+                <distribution data="@G12_mutations" id="mutationLikelihood" spec="phylonco.beast.evolution.likelihood.TreeLikelihoodWithErrorSlow" tree="@Tree.t:G12">
+                    <siteModel id="SiteModel.s:G12" spec="beast.base.evolution.sitemodel.SiteModel">
+                        <substModel id="binarySubst.s:G12" spec="phylonco.beast.evolution.substitutionmodel.BinarySubstitutionModel" lambda="@lambda"/>
+                    </siteModel>
+                    <branchRateModel clock.rate="@clockRate" id="StrictClock.c:G12" spec="beast.base.evolution.branchratemodel.StrictClockModel"/>
+                    <errorModel id="errorModel" spec="phylonco.beast.evolution.errormodel.BinaryErrorModel" alpha="@alpha" beta="@beta" datatype="@binaryDataType"/>
+                </distribution>
+                
+                <!-- DIRECTIONAL DIFFUSION LIKELIHOOD -->
+                <distribution id="directional3d"
+                              spec="beast3d.directional.likelihood.DirectionalDiffusionLikelihood"
+                              tree="@Tree.t:G12"
+                              trait="@trait.3d">
+                    <diffusionModel spec="beast3d.directional.model.DirectionalDiffusionModel">
+                        <driftRate idref="drift.rate"/>
+                        <diffusionRate idref="diffusion.rate"/>
+                        <precisionMatrix idref="precision.3d"/>
+                    </diffusionModel>
+                </distribution>
+            </distribution>
+        </distribution>
+        
+        <!-- Tree operators -->
+        <operator id="treeScaler.t:G12" scaleFactor="0.5" spec="ScaleOperator" tree="@Tree.t:G12" weight="3.0"/>
+        <operator id="treeRootScaler.t:G12" rootOnly="true" scaleFactor="0.5" spec="ScaleOperator" tree="@Tree.t:G12" weight="3.0"/>
+        <operator id="SubtreeSlide.t:G12" spec="SubtreeSlide" tree="@Tree.t:G12" weight="15.0"/>
+        <operator id="narrow.t:G12" spec="Exchange" tree="@Tree.t:G12" weight="15.0"/>
+        <operator id="wide.t:G12" isNarrow="false" spec="Exchange" tree="@Tree.t:G12" weight="3.0"/>
+        <operator id="WilsonBalding.t:G12" spec="WilsonBalding" tree="@Tree.t:G12" weight="3.0"/>
+        
+        <!-- Parameter operators -->
+        <operator id="strictClockUpDownOperator" scaleFactor="0.75" spec="UpDownOperator" weight="3.0">
+            <parameter idref="clockRate" name="up"/>
+            <tree idref="Tree.t:G12" name="down"/>
+        </operator>
+        <operator id="StrictClockRateScaler" parameter="@clockRate" scaleFactor="0.75" spec="ScaleOperator" weight="3.0"/>
+        <operator id="PopSizeScaler" parameter="@popSize" scaleFactor="0.75" spec="ScaleOperator" weight="3.0"/>
+        <operator id="LambdaScaler" parameter="@lambda" scaleFactor="0.75" spec="ScaleOperator" weight="3.0"/>
+        
+        <!-- Trait operators -->
+        <operator id="Trait3DRandomWalk" spec="beast.base.inference.operator.RealRandomWalkOperator"
+                  parameter="@trait.3d" windowSize="2.0" weight="20.0"/>
+        
+        <operator id="Precision3DScaler" spec="beast.base.evolution.operator.ScaleOperator"
+                  parameter="@precision.3d" scaleFactor="0.9" weight="10.0"/>
+        
+        <!-- Directional diffusion operators -->
+        <operator id="DriftRateRandomWalk" spec="beast.base.inference.operator.RealRandomWalkOperator"
+                  parameter="@drift.rate" windowSize="0.05" weight="20.0"/>
+        <operator id="DiffusionRateScaler" spec="beast.base.evolution.operator.ScaleOperator"
+                  parameter="@diffusion.rate" scaleFactor="0.9" weight="10.0"/>
+        
+        <!-- PhyloNCO operators -->
+        <operator id="ScaleAlpha" spec="beast.base.evolution.operator.ScaleOperator" parameter="@alpha" scaleFactor="0.75" weight="1.0"/>
+        <operator id="ScaleBeta" spec="beast.base.evolution.operator.ScaleOperator" parameter="@beta" scaleFactor="0.75" weight="1.0"/>
+        
+        <logger id="screenlog" spec="Logger" logEvery="10000">
+            <log idref="posterior"/>
+            <log idref="likelihood"/>
+            <log idref="prior"/>
+            <log idref="directional3d"/>
+            <log idref="mutationLikelihood"/>
+        </logger>
+        
+        <logger id="tracelog" spec="Logger" fileName="G12_directional_phylonco_seed42.log" logEvery="2000" sanitiseHeaders="true" sort="smart">
+            <log idref="posterior"/>
+            <log idref="likelihood"/>
+            <log idref="prior"/>
+            <log idref="directional3d"/>
+            <log idref="mutationLikelihood"/>
+            <log idref="lambda"/>
+            <log idref="alpha"/>
+            <log idref="beta"/>
+            <log idref="precision.3d"/>
+            <log idref="drift.rate"/>
+            <log idref="diffusion.rate"/>
+            <log idref="trait.3d"/>
+            <log idref="popSize"/>
+            <log idref="clockRate"/>
+        </logger>
+        
+        <logger id="treelog" spec="Logger" fileName="G12_directional_phylonco_seed42.trees" logEvery="2000" mode="tree">
+            <log id="TreeWithMetaDataLogger.t:G12" spec="beast.base.evolution.TreeWithMetaDataLogger" tree="@Tree.t:G12">
+                <metadata idref="trait.3d"/>
+            </log>
+        </logger>
+        
+        <init estimate="false" id="RandomTree.t:G12" initial="@Tree.t:G12" spec="beast.base.evolution.tree.coalescent.RandomTree" taxa="@G12_mutations">
+            <populationModel id="ConstantPopulation0.t:G12" spec="ConstantPopulation">
+                <parameter id="randomPopSize.t:G12" name="popSize" value="1"/>
+            </populationModel>
+        </init>
+    </run>
+</beast>
